@@ -1,0 +1,114 @@
+
+.homeContainer{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    transition: all 1s ease;
+}
+video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+}
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: inherit;
+    width: inherit;
+    z-index: 2;
+    position: relative;
+}
+h1{
+    font-size: 100px;
+}
+h4{
+    font-size: 40px;
+}
+.btnClass{
+    display: flex;
+}
+.btn1,.btn2{
+    padding:15px 30px;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+    border: 2px solid white;
+}
+.btn1:hover,.btn2:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width: 960px) {
+    
+    h1{
+        font-size: 60px;
+        margin: 10px;
+    }
+    h4{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .btnClass{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn1,.btn2{
+        padding:10px 10px;
+        font-size: 18px;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        transition: all 1s ease;
+        border: 1px solid white;
+    }
+    .btn1:hover,.btn2:hover{
+        transform: scale(1.1);
+        background-color: white;
+        color: black;
+    }
+}
+@media screen and (max-width: 560px) {
+    h1{
+        font-size: 35px;
+        margin: 5px;
+        align-items: center;
+    }
+    h4{
+        font-size: 20px;
+        margin: 5px;
+    }
+    .btnClass{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn1,.btn2{
+        padding:7px 7px;
+        font-size: 16px;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        transition: all 1s ease;
+        border: 1px solid white;
+    }
+    .btn1:hover,.btn2:hover{
+        transform: scale(1.1);
+        background-color: white;
+        color: black;
+    }
+}
